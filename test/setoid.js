@@ -2,7 +2,6 @@ var should = require('chai').should();
 require('../dist/index.js');
 
 describe('Setoid', function(){
-  console.log(should);
   it('obeys reflexivity', function(){
     var s = new Set([1,2,3]);
     s.equals(s).should.equal(true);
